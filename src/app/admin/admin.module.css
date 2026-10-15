@@ -1,0 +1,315 @@
+.adminContainer {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: rgba(14, 14, 22, 0.95);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.headerContainer {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.shieldBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+}
+
+.shieldIcon {
+  color: var(--accent-purple-light);
+}
+
+.brandTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.brandSubtitle {
+  font-size: 0.78rem;
+  color: var(--accent-purple-light);
+  font-weight: 500;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.publicLink {
+  display: none;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  padding: 0.5rem 0.85rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all var(--transition-fast);
+}
+
+@media (min-width: 640px) {
+  .publicLink {
+    display: inline-flex;
+  }
+}
+
+.publicLink:hover {
+  color: #ffffff;
+  border-color: var(--accent-purple);
+  background: rgba(139, 92, 246, 0.08);
+}
+
+/* Main */
+.mainContent {
+  max-width: var(--container-max-width);
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Notice Banner */
+.noticeBanner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 2rem;
+}
+
+.noticeHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.checkIcon {
+  color: #34d399;
+}
+
+.noticeTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #34d399;
+}
+
+.noticeText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-main);
+  margin-bottom: 0.6rem;
+}
+
+.noticeTextSubtle {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.noticeTextSubtle strong {
+  color: var(--accent-purple-light);
+}
+
+/* Identity Card */
+.profileCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.cardHeading {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .detailsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .detailsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.detailLabel {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+  font-weight: 600;
+}
+
+.detailValueRow {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.detailIcon {
+  color: var(--accent-purple-light);
+  flex-shrink: 0;
+}
+
+.detailValue {
+  font-size: 0.95rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.detailValueMono {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  color: #c4b5fd;
+  word-break: break-all;
+}
+
+/* Section */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sectionTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.verificationGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .verificationGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.verificationCard {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.itemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.itemTitle {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.itemBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #34d399;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+}
+
+.itemDesc {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+/* Roadmap */
+.roadmapCard {
+  background: rgba(139, 92, 246, 0.05);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+}
+
+.roadmapTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.roadmapText {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.roadmapTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.roadmapTag {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #d8b4fe;
+  background: rgba(139, 92, 246, 0.15);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-full);
+}

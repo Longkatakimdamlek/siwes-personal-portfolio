@@ -1,0 +1,6 @@
+{
+  "name": "SIWES Developer Portfolio",
+  "description": "Personal full-stack developer portfolio website built with Next.js and Supabase for SIWES project.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

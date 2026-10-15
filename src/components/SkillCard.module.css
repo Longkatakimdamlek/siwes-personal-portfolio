@@ -1,0 +1,133 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.1rem;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-glow);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  color: var(--accent-purple-light);
+  flex-shrink: 0;
+  transition: all var(--transition-fast);
+}
+
+.card:hover .iconBox {
+  background: var(--accent-purple);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex-grow: 1;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.category {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.featuredBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #fbbf24;
+}
+
+.starIcon {
+  color: #fbbf24;
+}
+
+.skillName {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* Proficiency Progress */
+.levelContainer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.levelMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+}
+
+.levelLabel {
+  color: var(--text-subtle);
+}
+
+.levelValue {
+  color: var(--accent-purple-light);
+  font-weight: 600;
+  font-family: var(--font-mono);
+}
+
+.progressBar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-purple-strong), var(--accent-purple-light));
+  border-radius: var(--radius-full);
+  transition: width 0.6s ease-in-out;
+}
