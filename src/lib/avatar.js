@@ -1,4 +1,4 @@
-export const DEFAULT_AVATAR_URL = '/images/developer_avatar_portrait_1790252834755.jpg';
+export const DEFAULT_AVATAR_URL = '/images/developer_avatar_portrait.jpeg';
 
 const LEGACY_AVATAR_URLS = new Set([
   '/assets/avatar-placeholder.png',
